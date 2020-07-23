@@ -1,0 +1,61 @@
+1. npm install --save-dev sequelize-cli
+2. npm install mysql2
+3. npm install npm
+4. npx sequelize-cli init (to create folders config migration models seeders)
+
+config folder
+	config.json file
+	
+	{
+	  "development": {
+	    "username": "root",
+	    "password": "password",
+	    "database": "mydb",
+	    "host": "127.0.0.1",
+	    "dialect": "mysql"
+	  },
+	  "test": {
+	    "username": "root",
+	    "password": "password",
+	    "database": "mydb",
+	    "host": "127.0.0.1",
+	    "dialect": "mysql"
+	  },
+	  "production": {
+	    "username": "root",
+	    "password": "password",
+	    "database": "mydb",
+	    "host": "127.0.0.1",
+	    "dialect": "mysql"
+	  }
+	}
+
+
+We will use model:generate command. This command requires two options:
+
+name: the name of the model;
+attributes: the list of model attributes.
+
+Let's create a model named User.
+
+5. ==>  npx sequelize-cli model:generate --name cars_details --attributes make:string,model:string,price:integer
+
+This will:
+
+Create a model file user in models folder;
+Create a migration file with name like XXXXXXXXXXXXXX-create-user.js in migrations folder.
+
+
+
+6. npx sequelize-cli db:migrate (for serching the path and create the table as named in 5.)
+
+// 1. npx sequelize-cli db:migrate:undo (to revert most recent migration);
+
+// 2. db:migrate:undo:all --to 
+
+
+9. npx sequelize-cli seed:generate --name demo-user (to add data to user table)
+
+10. npx sequelize-cli db:seed:all (to insert data to the table)
+
+
