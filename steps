@@ -55,6 +55,7 @@ Create a migration file with name like XXXXXXXXXXXXXX-create-user.js in migratio
 
 
 9. npx sequelize-cli seed:generate --name demo-user (to add data to user table)
+10. goto seeder folder and add the logic to insert data
 
 10. npx sequelize-cli db:seed:all (to insert data to the table)
 
