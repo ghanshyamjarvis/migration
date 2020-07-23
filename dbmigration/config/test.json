@@ -1,0 +1,10 @@
+{
+	"dev":{
+		"host"     : "127.0.0.1",
+		"user"     : "root",
+		"password" : "password",
+		"database" : "car_details",
+		"driver"   : "mysql",
+		"multipleStatements": true
+	},"sql-file":true
+}		

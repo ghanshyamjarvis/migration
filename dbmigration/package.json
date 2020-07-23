@@ -1,0 +1,17 @@
+{
+  "name": "dbmigration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "db-migrate-mysql": "^2.1.1",
+    "mysql": "^2.18.1",
+    "mysql-migrations": "^1.0.6",
+    "sequelize": "^6.3.3"
+  }
+}
